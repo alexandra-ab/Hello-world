@@ -10,6 +10,6 @@ public class TaskThree {
         int lowerBound = 0;
         int upperBound = 10;
         boolean is_in_range = (avg >= lowerBound) && (avg <= upperBound);
-        System.out.println(is_in_range );
+        System.out.println(is_in_range);
     }
 }
