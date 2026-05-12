@@ -2,7 +2,7 @@ package lesson_one;
 
 public class TaskTwo {
     public static void main(String[] args) {
-        String name = "It's fine!";
+        String name = "Alexandra!";
         System.out.println(name.length());
         char first = name.charAt(0);
         System.out.println(first);
