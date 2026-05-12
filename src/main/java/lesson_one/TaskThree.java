@@ -9,7 +9,7 @@ public class TaskThree {
         System.out.println(avg);
         int lowerBound = 0;
         int upperBound = 10;
-        boolean results = (avg >= lowerBound) && (avg <= upperBound);
-        System.out.println(results);
+        boolean is_in_range = (avg >= lowerBound) && (avg <= upperBound);
+        System.out.println(is_in_range);
     }
 }
