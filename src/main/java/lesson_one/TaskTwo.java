@@ -9,7 +9,5 @@ public class TaskTwo {
         char last = name.charAt(name.length() - 1);
         System.out.println(last);
         System.out.println(name.toUpperCase());
-
-
     }
 }
