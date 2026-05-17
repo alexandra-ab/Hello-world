@@ -1,6 +1,6 @@
 package lesson_two;
 
-public class TestTwo {
+public class TaskTwo {
     public static void main(String[] args) {
         int grade = 6;
         if (grade >= 90) {
