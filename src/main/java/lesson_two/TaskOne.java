@@ -7,11 +7,9 @@ public class TaskOne {
             System.out.println("Тепло");
         } else if (temperature >= 20) {
             System.out.println("Жарко");
-
         } else {
             System.out.println("Холодно");
         }
-
 
         int age = 17;
         String gender = "Male";

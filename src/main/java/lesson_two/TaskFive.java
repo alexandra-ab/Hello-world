@@ -5,13 +5,13 @@ public class TaskFive {
         int age = 44;
         String zone = "обычная";
         String timeOfDay = "утро";
-        if (age < 12) {
+        if (age <= 12) {
             if (zone.equals("VIP")) {
                 System.out.println("Детский VIP-билет");
             } else {
                 System.out.println("Детский билет");
             }
-        } else if (age >= 12 & age <= 60) {
+        } else if (age > 12 && age <= 60) {
             if (zone.equals("VIP")) {
                 if (timeOfDay.equals("вечер")) {
                     System.out.println("Вечерний VIP-билет");
