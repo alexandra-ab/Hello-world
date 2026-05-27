@@ -28,6 +28,6 @@ public class Dog {
 
     public void eat(double foodWeight) {
         weight += foodWeight / 2;
-        System.out.println(name + "'s weight is " + weight);
+        System.out.println(name + "'s weight is " + weight + "kg.");
     }
 }
