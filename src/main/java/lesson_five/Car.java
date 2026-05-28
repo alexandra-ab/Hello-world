@@ -21,11 +21,11 @@ public class Car {
     }
 
     public void drive(double distance) {
-        mileage += distance;
-        fuelLevel -= distance * 0.1;
         if (fuelLevel < 0) {
             System.out.println("Not enough fuel!");
         }
+        mileage += distance;
+        fuelLevel -= distance * 0.1;
     }
 
     public void refuel(double fuelAmount) {

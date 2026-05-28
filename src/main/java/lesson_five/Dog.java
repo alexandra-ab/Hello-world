@@ -21,7 +21,7 @@ public class Dog {
     }
 
     public void bark() {
-        for (int i = 0; i <= age; i++) {
+        for (int i = 1; i <= age; i++) {
             System.out.println(name + " bark!");
         }
     }
