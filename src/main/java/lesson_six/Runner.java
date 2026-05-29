@@ -23,6 +23,8 @@ public class Runner {
         iphone.callContact("Tim");
         samsung.callContact("Tim");
         samsung.callContact("Alan");
+        iphone.setBatteryLevel(123);
+        samsung.setContact2("");
     }
 }
 
