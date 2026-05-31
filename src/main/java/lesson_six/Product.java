@@ -15,7 +15,6 @@ public class Product {
         } else {
             System.out.println("Invalid name!");
         }
-
     }
 
     public double getPrice() {

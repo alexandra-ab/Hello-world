@@ -25,6 +25,13 @@ public class Runner {
         samsung.callContact("Alan");
         iphone.setBatteryLevel(123);
         samsung.setContact2("");
+
+        CustomerAccount johnDoeCostomer = new CustomerAccount("John Doe", "john@example.com", 200.0, 10, "Active");
+        CustomerAccount marySmith = new CustomerAccount("Mary Smith", "mary@example.com", 50.0, 0, "Blocked");
+        johnDoeCostomer.purchase(50.0);
+        System.out.println(johnDoeCostomer);
+        marySmith.applyDiscount(0);
+        marySmith.purchase(30.0);
     }
 }
 
