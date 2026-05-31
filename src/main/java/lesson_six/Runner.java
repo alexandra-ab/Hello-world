@@ -32,6 +32,16 @@ public class Runner {
         System.out.println(johnDoeCostomer);
         marySmith.applyDiscount(0);
         marySmith.purchase(30.0);
+
+        BikeRental mountain = new BikeRental("Mountain", 10.0, true, null);
+        BikeRental electric = new BikeRental("Electric", 15.0, true, null);
+        BikeRental road = new BikeRental("Road");
+        mountain.rentBike("John");
+        mountain.rentBike("Alice");
+        mountain.returnBike("John");
+        mountain.rentBike("Alice");
+        mountain.setBikeType("Cat");
+        road.setHourlyRate(-19);
     }
 }
 
