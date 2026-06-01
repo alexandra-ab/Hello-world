@@ -87,6 +87,7 @@ public class CustomerAccount {
 
     public void applyDiscount(int value) {
         if (accountStatus.equals("Active") && value >= 0 && value < 50 ) {
+            this.discount = value;
             System.out.println("Discount applied successfully");
         } else {
             System.out.println("Cannot apply discount. Account is blocked.");
