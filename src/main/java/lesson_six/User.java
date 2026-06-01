@@ -46,10 +46,12 @@ public class User {
     }
 
     public void changePassword(String oldPassword, String newPassword) {
-        if (newPassword.length() >= 8 && oldPassword.equals(this.password)) {
-            this.password = newPassword;
+        if (!this.password.equals(oldPassword)) {
+            System.out.println("Incorrect old password");
+        } else if (newPassword.length() < 8){
+            System.out.println("New password must be at least 8 characters long");
         } else {
-            System.out.println("Invalid old password");
+            this.password = newPassword;
         }
     }
 

@@ -60,7 +60,10 @@ public class MobilePhone {
     }
 
     public void callContact(String name) {
-        if (this.batteryLevel > 10) {
+        if (this.batteryLevel <= 10) {
+            System.out.println("Battery too low!");
+            return;
+        } else {
             if (this.contact1.equals(name) || this.contact2.equals(name)) {
                 this.batteryLevel -= 10;
                 System.out.println("Calling " + name);
@@ -68,5 +71,16 @@ public class MobilePhone {
                 System.out.println("Contact not found!");
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return "MobilePhone{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", batteryLevel=" + batteryLevel +
+                ", contact1='" + contact1 + '\'' +
+                ", contact2='" + contact2 + '\'' +
+                '}';
     }
 }
