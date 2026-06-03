@@ -6,9 +6,9 @@ public class Runner {
         Car audi = new Car(350, 5);
         Truck mercedes = new Truck(180, 100);
         Truck volvo = new Truck(200, 0);
-        lexus.setSpeed(40);
-        volvo.setSpeed(100);
-        mercedes.setSpeed(30);
+        lexus.accelerate(40);
+        volvo.accelerate(100);
+        mercedes.accelerate(100);
         lexus.move();
         volvo.move();
         System.out.println(volvo);
