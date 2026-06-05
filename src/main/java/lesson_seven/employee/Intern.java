@@ -8,9 +8,9 @@ public class Intern extends Employee{
     @Override
     public double calculateSalary() {
         if (this.baseSalary > 1000) {
-            return baseSalary = 1000;
+            return 1000;
         } else {
-            return this.baseSalary = baseSalary;
+            return baseSalary;
         }
     }
 

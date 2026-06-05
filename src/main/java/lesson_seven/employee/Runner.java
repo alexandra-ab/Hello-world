@@ -11,6 +11,7 @@ public class Runner {
         kate.calculateSalary();
         System.out.println(kate);
         john.calculateSalary();
+        System.out.println(john.calculateSalary());
         System.out.println(john);
         ron.calculateSalary();
         System.out.println(ron);
