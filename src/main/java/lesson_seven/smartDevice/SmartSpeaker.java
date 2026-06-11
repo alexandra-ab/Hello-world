@@ -9,8 +9,12 @@ public class SmartSpeaker extends SmartDevice {
     }
 
     public void playMusic(String song) {
-        this.currentSong = song;
-        System.out.println("Играет " + song);
+        if (!isOn) {
+            System.out.println("Устройство не включено.");
+        } else {
+            this.currentSong = song;
+            System.out.println("Играет " + song);
+        }
     }
 
     @Override

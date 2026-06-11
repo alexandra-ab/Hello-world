@@ -16,7 +16,11 @@ public class SmartThermostat extends SmartDevice{
 
     @Override
     public void performAction() {
-        System.out.println("Настройка температуры с " + this.currentTemperature + " до " + this.targetTemperature + " градусов.");
-        this.currentTemperature = targetTemperature;
+        if (!isOn) {
+            System.out.println("Устройство не включено.");
+        } else {
+            System.out.println("Настройка температуры с " + this.currentTemperature + " до " + this.targetTemperature + " градусов.");
+            this.currentTemperature = targetTemperature;
+        }
     }
 }
