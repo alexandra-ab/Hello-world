@@ -62,9 +62,9 @@ public class BikeRental {
     }
 
     public void returnBike(String name) {
-        if (renterName.equals(name)) {
+        if (renterName != null) {
             availability = true;
-            this.renterName = renterName;
+            this.renterName = null;
         } else {
             System.out.println("Bike is already free.");
         }
