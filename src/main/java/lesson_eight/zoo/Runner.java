@@ -9,18 +9,10 @@ public class Runner {
 
         petr.setAnimal(lion);
         petr.getAnimalInfo();
-        lion.walk();
-        penguin.walk();
-        elephant.walk();
+        petr.feedAnimal();
+        petr.helpToWalk();
         petr.setAnimal(penguin);
         petr.getAnimalInfo();
-        petr.feedAnimal();
-        lion.feed("Рыба");
-        penguin.feed("Рыба");
-        elephant.feed("Арахис");
-        lion.voice();
-        penguin.voice();
-        elephant.voice();
         petr.feedAnimal();
     }
 }

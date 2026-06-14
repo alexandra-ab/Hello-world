@@ -14,6 +14,7 @@ public class Penguin extends Animal{
     public void feed(String food) {
         if (food.equals(this.favoriteFood)) {
             System.out.println(this.name + " ест рыбу.");
+            this.levelHunger -= 10;
         } else {
             System.out.println(this.name + " не ест такую еду.");
         }
