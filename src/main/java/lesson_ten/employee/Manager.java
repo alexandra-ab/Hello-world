@@ -2,15 +2,17 @@ package lesson_ten.employee;
 
 public class Manager extends Employee implements Trainable{
     private int salary;
+    private int bonus;
 
-    public Manager(String name, int age, int salary) {
+    public Manager(String name, int age, int salary, int bonus) {
         super(name, age);
         this.salary = salary;
+        this.bonus = bonus;
     }
 
     @Override
     public int calculateSalary() {
-        return salary;
+        return salary + this.bonus;
     }
 
     @Override

@@ -21,7 +21,7 @@ public class OfficeEmployee extends Employee implements Trainable{
 
     @Override
     public void attendTraining() {
-        String attendTrainig = String.format("%s проходит тренинг раз в 3 месяца.", name);
+        String attendTrainig = String.format("%s не проходит тренинг. Офисных сотрудников не тренируют.", name);
         System.out.println(attendTrainig);
     }
 }

@@ -12,7 +12,7 @@ public class Freelancer extends Employee implements Trainable{
 
     @Override
     public int calculateSalary() {
-        return paymentForProject * numberOfProjects;
+        return paymentForProject * this.numberOfProjects;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class Freelancer extends Employee implements Trainable{
 
     @Override
     public void attendTraining() {
-        String attendTraining = String.format("%s проходит тренинг раз в 6 месяцев.", name);
+        String attendTraining = String.format("%s проходит тренинг для повышения квалификации.", name);
         System.out.println(attendTraining);
     }
 }
