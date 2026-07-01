@@ -1,4 +1,4 @@
-package lesson_ten.shape.employee;
+package lesson_ten.employee;
 
 public abstract class Employee {
     public String name;

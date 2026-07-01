@@ -1,6 +1,6 @@
 package lesson_ten.shape;
 
-public class Cicle extends Shape implements Calculable{
+public class Cicle extends Shape implements Calculable {
     private double radius;
 
     public Cicle(double radius, String color) {

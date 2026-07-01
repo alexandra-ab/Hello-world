@@ -1,4 +1,4 @@
-package lesson_ten.shape.employee;
+package lesson_ten.employee;
 
 public class OfficeEmployee extends Employee implements Trainable{
     private int salary;

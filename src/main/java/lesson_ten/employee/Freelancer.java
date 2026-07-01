@@ -1,4 +1,4 @@
-package lesson_ten.shape.employee;
+package lesson_ten.employee;
 
 public class Freelancer extends Employee implements Trainable{
     private int paymentForProject;
