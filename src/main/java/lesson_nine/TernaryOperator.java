@@ -7,8 +7,8 @@ public class TernaryOperator {
         System.out.println(result);
 
         int temperature = -2;
-        String resultTemperature = (temperature <= 0) ? "Холодно" :
-                (temperature) < 20 ? "Прохладно" : "Тепло";
+        String resultTemperature = temperature <= 0 ? "Холодно" :
+                temperature < 20 ? "Прохладно" : "Тепло";
         System.out.println(resultTemperature);
 
         int a = 23;
@@ -19,5 +19,9 @@ public class TernaryOperator {
         int c = 19;
         String division = (c % 5 == 0 && c % 3 == 0) ? "Число делится на 5 и 3." : "Число не делится на 5 и 3.";
         System.out.println(division);
+
+        int number = 75;
+        String inRange = (number >= 50 && number <= 100) ? "Да" : "Нет";
+        System.out.println(inRange);
     }
 }

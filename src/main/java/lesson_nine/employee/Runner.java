@@ -5,11 +5,11 @@ public class Runner {
         Employee alice = new Employee("Алиса", 24, 60000);
         Employee roman = new Employee("Роман", 47, 80000);
         Employee alexandra = new Employee("Александра", 29, 65000);
-        alice.getInfo();
-        roman.getInfo();
-        alexandra.getInfo();
+        System.out.println(alice.getInfo());
+        System.out.println(roman.getInfo());
+        System.out.println(alexandra.getInfo());
         alexandra.applyRaise(10.0);
-        alexandra.getInfo();
+        System.out.println(alexandra.getInfo());
         Employee.showTotalEmployees();
     }
 }

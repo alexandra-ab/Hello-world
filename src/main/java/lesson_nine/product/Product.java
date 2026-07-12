@@ -16,9 +16,8 @@ public class Product {
         totalStock += stock;
     }
 
-    public void getInfo() {
-        String info = String.format("Продукт: %s стоит %d евро, на складе %d", name, price, stock);
-        System.out.println(info);
+    public String getInfo() {
+        return String.format("Продукт: %s стоит %d евро, на складе %d", name, price, stock);
     }
 
     public void sellProduct(int quantity) {
@@ -27,7 +26,8 @@ public class Product {
         } else {
             stock -= quantity;
             totalStock -= quantity;
-            double percentLeft =  stock / (stock + quantity)  * 100;
+            double percentLeft = (double) stock / (stock + quantity)  * 100;
+            System.out.println("Остаток на складе: " + percentLeft);
         }
     }
 
