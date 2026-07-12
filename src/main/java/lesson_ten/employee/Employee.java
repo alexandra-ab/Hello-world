@@ -1,7 +1,7 @@
 package lesson_ten.employee;
 
 public abstract class Employee {
-    public String name;
+    protected String name;
     public int age;
 
     public Employee(String name, int age) {

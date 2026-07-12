@@ -25,6 +25,7 @@ public class Truck extends Vehicle implements Loadable{
 
     @Override
     public double calculateFuelConsumption() {
-        return this.fuel;
+        double fuelConsumption = currentSpeed * 0.08;
+        return fuelConsumption;
     }
 }

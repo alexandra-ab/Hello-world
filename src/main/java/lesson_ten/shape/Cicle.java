@@ -2,6 +2,7 @@ package lesson_ten.shape;
 
 public class Cicle extends Shape implements Calculable {
     private double radius;
+    private static final double PI = 3.14;
 
     public Cicle(double radius, String color) {
         super(color);
@@ -10,11 +11,11 @@ public class Cicle extends Shape implements Calculable {
 
     @Override
     public double calculateArea() {
-        return 3.14 * radius * radius;
+        return PI * radius * radius;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 2 * 3.14 * radius;
+        return 2 * PI * radius;
     }
 }

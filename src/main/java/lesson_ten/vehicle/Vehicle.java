@@ -1,10 +1,10 @@
 package lesson_ten.vehicle;
 
 public abstract class Vehicle {
-    public String brand;
-    public int maxSpeed;
-    public int currentSpeed;
-    public boolean engineStarted;
+    protected String brand;
+    protected int maxSpeed;
+    protected int currentSpeed;
+    protected boolean engineStarted;
 
     public Vehicle(String brand, int maxSpeed, int currentSpeed) {
         this.brand = brand;
@@ -25,6 +25,7 @@ public abstract class Vehicle {
             System.out.println(move);
         } else {
             String move = String.format("Нужно включить двигатель в %s.", brand);
+            System.out.println(move);
         }
     }
 

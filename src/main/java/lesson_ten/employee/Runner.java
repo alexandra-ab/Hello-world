@@ -8,7 +8,6 @@ public class Runner {
         valeria.work();
         valeria.attendTraining();
         System.out.println(valeria.calculateSalary());
-        alice.attendTraining();
         alice.work();
         alice.showInfo();
         System.out.println(alice.calculateSalary());
